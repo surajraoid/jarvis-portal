@@ -31,6 +31,7 @@ from services.news_service import get_all_news
 from services.ai_service import get_insights
 from routers.autoearner_router import router as autoearner_router
 from routers.jobs_router import router as jobs_router
+from routers.content_router import router as content_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 
@@ -115,6 +116,7 @@ app = FastAPI(
 
 app.include_router(autoearner_router)
 app.include_router(jobs_router)
+app.include_router(content_router)
 
 app.add_middleware(
     CORSMiddleware,

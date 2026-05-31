@@ -30,6 +30,7 @@ const NAV_ITEMS = [
   { to: '/news',          icon: MdNewspaper,         label: 'News Intel'     },
   { to: '/opportunities', icon: MdTrendingUp,        label: 'Opportunities'  },
   { to: '/autoearn',      icon: MdAutoAwesome,       label: 'Auto-Earn 🤖',  highlight: true },
+  { to: '/content',       icon: MdAutoAwesome,       label: 'Content Studio', highlight: true },
   { to: '/jobs',          icon: MdWork,              label: 'Job Hunter',    highlight: true },
   { to: '/earn',          icon: MdMonetizationOn,   label: 'Earn Guide',     highlight: false },
   { to: '/guide',         icon: MdMenuBook,          label: 'Money Guide'    },
