@@ -18,7 +18,7 @@ import {
   MdDashboard, MdShowChart, MdCurrencyBitcoin,
   MdNewspaper, MdTrendingUp, MdLightbulb,
   MdMenuBook, MdMenu, MdClose, MdWifi,
-  MdMonetizationOn,
+  MdMonetizationOn, MdAutoAwesome,
 } from 'react-icons/md'
 import { fetchHealth } from '../api/client'
 
@@ -29,7 +29,8 @@ const NAV_ITEMS = [
   { to: '/crypto',        icon: MdCurrencyBitcoin,  label: 'Crypto'         },
   { to: '/news',          icon: MdNewspaper,         label: 'News Intel'     },
   { to: '/opportunities', icon: MdTrendingUp,        label: 'Opportunities'  },
-  { to: '/earn',          icon: MdMonetizationOn,   label: 'Earn Now ⚡',   highlight: true },
+  { to: '/autoearn',      icon: MdAutoAwesome,       label: 'Auto-Earn 🤖',  highlight: true },
+  { to: '/earn',          icon: MdMonetizationOn,   label: 'Earn Guide',     highlight: false },
   { to: '/guide',         icon: MdMenuBook,          label: 'Money Guide'    },
 ]
 

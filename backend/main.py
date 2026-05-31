@@ -29,6 +29,7 @@ from services.market_service import get_market_overview, get_chart_history
 from services.crypto_service import get_all_crypto_data
 from services.news_service import get_all_news
 from services.ai_service import get_insights
+from routers.autoearner_router import router as autoearner_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 
@@ -110,6 +111,8 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+
+app.include_router(autoearner_router)
 
 app.add_middleware(
     CORSMiddleware,
