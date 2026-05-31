@@ -18,6 +18,7 @@ import {
   MdDashboard, MdShowChart, MdCurrencyBitcoin,
   MdNewspaper, MdTrendingUp, MdLightbulb,
   MdMenuBook, MdMenu, MdClose, MdWifi,
+  MdMonetizationOn,
 } from 'react-icons/md'
 import { fetchHealth } from '../api/client'
 
@@ -28,6 +29,7 @@ const NAV_ITEMS = [
   { to: '/crypto',        icon: MdCurrencyBitcoin,  label: 'Crypto'         },
   { to: '/news',          icon: MdNewspaper,         label: 'News Intel'     },
   { to: '/opportunities', icon: MdTrendingUp,        label: 'Opportunities'  },
+  { to: '/earn',          icon: MdMonetizationOn,   label: 'Earn Now ⚡',   highlight: true },
   { to: '/guide',         icon: MdMenuBook,          label: 'Money Guide'    },
 ]
 
@@ -161,12 +163,13 @@ export default function Layout({ children }) {
                 className={({ isActive }) =>
                   `flex items-center gap-3 px-2 py-2 rounded transition-all duration-200
                    text-jarvis-dim hover:text-jarvis-cyan hover:bg-jarvis-cyan/10
-                   ${isActive ? 'nav-link-active' : ''}`
+                   ${isActive ? 'nav-link-active' : ''}
+                   ${highlight ? 'text-jarvis-green hover:text-jarvis-green hover:bg-jarvis-green/10' : ''}`
                 }
               >
                 <Icon size={18} className="shrink-0" />
                 {!collapsed && (
-                  <span className="font-orbitron text-xs tracking-wider truncate">{label}</span>
+                  <span className={`font-orbitron text-xs tracking-wider truncate ${highlight ? 'text-jarvis-green' : ''}`}>{label}</span>
                 )}
               </NavLink>
             ))}

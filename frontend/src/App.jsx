@@ -10,6 +10,7 @@ import Crypto        from './pages/Crypto'
 import News          from './pages/News'
 import Opportunities from './pages/Opportunities'
 import Guide         from './pages/Guide'
+import Earn          from './pages/Earn'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/crypto"         element={<Crypto />}         />
           <Route path="/news"           element={<News />}           />
           <Route path="/opportunities"  element={<Opportunities />}  />
+          <Route path="/earn"           element={<Earn />}           />
           <Route path="/guide"          element={<Guide />}          />
           <Route path="*"               element={<Navigate to="/" />} />
         </Routes>
