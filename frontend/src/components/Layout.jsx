@@ -18,7 +18,7 @@ import {
   MdDashboard, MdShowChart, MdCurrencyBitcoin,
   MdNewspaper, MdTrendingUp, MdLightbulb,
   MdMenuBook, MdMenu, MdClose, MdWifi,
-  MdMonetizationOn, MdAutoAwesome,
+  MdMonetizationOn, MdAutoAwesome, MdWork, MdSchool,
 } from 'react-icons/md'
 import { fetchHealth } from '../api/client'
 
@@ -30,8 +30,10 @@ const NAV_ITEMS = [
   { to: '/news',          icon: MdNewspaper,         label: 'News Intel'     },
   { to: '/opportunities', icon: MdTrendingUp,        label: 'Opportunities'  },
   { to: '/autoearn',      icon: MdAutoAwesome,       label: 'Auto-Earn 🤖',  highlight: true },
+  { to: '/jobs',          icon: MdWork,              label: 'Job Hunter',    highlight: true },
   { to: '/earn',          icon: MdMonetizationOn,   label: 'Earn Guide',     highlight: false },
   { to: '/guide',         icon: MdMenuBook,          label: 'Money Guide'    },
+  { to: '/tutorial',      icon: MdSchool,            label: 'Tutorial 🎓'    },
 ]
 
 // ── Clock component ───────────────────────────────────────────────────────────

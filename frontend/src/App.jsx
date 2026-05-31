@@ -12,6 +12,8 @@ import Opportunities from './pages/Opportunities'
 import Guide         from './pages/Guide'
 import Earn          from './pages/Earn'
 import AutoEarn      from './pages/AutoEarn'
+import JobHunter     from './pages/JobHunter'
+import Tutorial      from './pages/Tutorial'
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
           <Route path="/earn"           element={<Earn />}           />
           <Route path="/autoearn"       element={<AutoEarn />}       />
           <Route path="/guide"          element={<Guide />}          />
+          <Route path="/jobs"           element={<JobHunter />}      />
+          <Route path="/tutorial"       element={<Tutorial />}       />
           <Route path="*"               element={<Navigate to="/" />} />
         </Routes>
       </Layout>
